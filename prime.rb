@@ -1,8 +1,10 @@
 # Add  code here!
 def prime? (integer)
-  if integer == integer % integer = 1 && integer % 1 = integer
-    return true
+  if integer <= 1
+    return false
+  elsif integer == 2
+    true
   else
-    false
+    (2..integer/2).none? {|n| integer % n == 0}
   end
 end
